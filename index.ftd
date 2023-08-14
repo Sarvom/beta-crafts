@@ -104,6 +104,14 @@ align-self: center
 src: $navbar-mobile.close
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
+-- ftd.text: $navbar-mobile.name
+if: { navbar-mobile.name != NULL }
+role: $inherited.types.heading-tiny
+margin-top.px: 8
+color: white
+link: index.html#participate
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
+
 -- end: ftd.row
 
 -- ftd.column:
@@ -181,6 +189,7 @@ align-content: center
 
 -- component navbar-desktop:
 ftd.image-src logo:
+optional caption name:
 optional string cta-text-1:
 optional string cta-text-2:
 optional string cta-text-3:
@@ -203,6 +212,14 @@ src: $navbar-desktop.logo
 height.fixed.px: 64
 padding.vh: 1
 align-self: center
+
+-- ftd.text: $navbar-desktop.name
+if: { navbar-desktop.name != NULL }
+role: $inherited.types.heading-tiny
+margin-top.px: 8
+color: white
+link: index.html#participate
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- navbar-text: 
 cta-text: $navbar-desktop.cta-text-1
