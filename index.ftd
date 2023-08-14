@@ -3,7 +3,9 @@
 
 -- navbar.navbar:
 logo: $assets.files.assets.logo.png
-cta-text-1: Home
-cta-text-2: About
-cta-text-3: Campus Partners
-cta-text-4: Contribute
+cta-text-1: Offerings
+cta-text-2: Team
+cta-text-3: Clients
+cta-text-4: Sectors
+cta-text-5: Approach
+cta-text-6: Ethos

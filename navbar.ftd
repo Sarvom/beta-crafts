@@ -1,11 +1,15 @@
-
 -- component navbar:
 ftd.image-src logo:
 optional string cta-text-1:
 optional string cta-text-2:
 optional string cta-text-3:
 optional string cta-text-4:
-
+optional string cta-text-5:
+optional string cta-text-6:
+optional string cta-text-7:
+optional string cta-text-8:
+optional string cta-text-9:
+optional string cta-text-10:
 
 -- ftd.column:
 width: fill-container
@@ -18,6 +22,8 @@ cta-text-1: $navbar.cta-text-1
 cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
+cta-text-5: $navbar.cta-text-5
+cta-text-6: $navbar.cta-text-6
 logo: $navbar.logo
 
 
@@ -27,6 +33,8 @@ cta-text-1: $navbar.cta-text-1
 cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
 cta-text-4: $navbar.cta-text-4
+cta-text-5: $navbar.cta-text-5
+cta-text-6: $navbar.cta-text-6
 logo: $navbar.logo
 
 -- end: ftd.column
@@ -49,14 +57,20 @@ optional string cta-text-1:
 optional string cta-text-2:
 optional string cta-text-3:
 optional string cta-text-4:
-ftd.image-src menu: $assets.files.images.menu.svg
+optional string cta-text-5:
+optional string cta-text-6:
+optional string cta-text-7:
+optional string cta-text-8:
+optional string cta-text-9:
+optional string cta-text-10:
+ftd.image-src menu: $assets.files.images.nav_icon_mobile.png
 ftd.image-src close: $assets.files.images.close.svg
 boolean $open: false
 
 -- ftd.column:
 padding.px: 8
 width: fill-container
-background.solid: #181939
+background.solid: #FFFFFF
 height: hug-content
 
 -- ftd.row:
@@ -120,6 +134,20 @@ color: white
 link: index.html#participate
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
+-- ftd.text: $navbar-mobile.cta-text-5
+role: $inherited.types.heading-tiny
+margin-top.px: 8
+color: white
+link: index.html#participate
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
+
+-- ftd.text: $navbar-mobile.cta-text-6
+role: $inherited.types.heading-tiny
+margin-top.px: 8
+color: white
+link: index.html#participate
+$on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
+
 -- ftd.row:
 width: fill-container
 margin-top.px: 24
@@ -161,7 +189,7 @@ width: fill-container
 spacing.fixed.px: 16
 padding.vh: 1
 height.fixed.vh: 10
-background.solid: #181939
+background.solid: #FFFFFF
 align-content: center
 z-index: 99999
 sticky: true
@@ -188,13 +216,13 @@ cta-text-url: index.html#sponsors
 cta-text: $navbar-desktop.cta-text-4
 cta-text-url: index.html#participate
 
--- ftd.row:
-spacing.fixed.px: 16
-align-self: center
-align-content: right
-margin-right.vw: 4
+-- navbar-text: 
+cta-text: $navbar-desktop.cta-text-5
+cta-text-url: index.html#participate
 
--- end: ftd.row
+-- navbar-text: 
+cta-text: $navbar-desktop.cta-text-6
+cta-text-url: index.html#participate
 
 -- end: ftd.row
 
@@ -218,15 +246,15 @@ string cta-text-url:
 height: fill-container
 align-content: center
 margin-horizontal.vh: 2
-border-bottom-width.px if { navbar-text.is-active }: 4
-border-color: #01FEDE
+border-top-width.px if { navbar-text.is-active }: 4
+border-color: #de2d18
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-text.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-text.is-active, v = false)
 
 -- ftd.text: $navbar-text.cta-text
 role: $inherited.types.label-large
-style: semi-bold
-color: white
+color: #333333
+color if { navbar-text.is-active } : #de2d18
 align-self: center
 link: $$navbar-text.cta-text-url
 
