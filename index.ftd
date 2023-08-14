@@ -3,7 +3,7 @@
 
 -- lib.page:
 
--- navbar.navbar:
+-- navbar.navbar-desktop:
 logo: $assets.files.assets.logo.png
 cta-text-1: Offerings
 cta-text-2: Team
