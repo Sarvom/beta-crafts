@@ -220,7 +220,6 @@ role: $inherited.types.heading-tiny
 margin-top.px: 8
 color: white
 link: index.html#participate
-$on-click$: $ftd.set-bool($a = $navbar-desktop.open, v = false)
 
 -- navbar-text: 
 cta-text: $navbar-desktop.cta-text-1
