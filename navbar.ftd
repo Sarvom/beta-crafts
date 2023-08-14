@@ -175,7 +175,7 @@ optional string cta-text-6:
 
 -- ftd.row:
 width: fill-container
-spacing.fixed.px: 16
+spacing: space-around
 padding.vh: 1
 height.fixed.vh: 10
 background.solid: #FFFFFF
@@ -188,6 +188,11 @@ src: $navbar-desktop.logo
 height.fixed.px: 64
 padding.vh: 1
 align-self: center
+
+-- ftd.row:
+height: fill-container
+spacing.fixed.px: 16
+
 
 -- navbar-text: 
 cta-text: $navbar-desktop.cta-text-1
@@ -212,6 +217,8 @@ cta-text-url: index.html#participate
 -- navbar-text: 
 cta-text: $navbar-desktop.cta-text-6
 cta-text-url: index.html#participate
+
+-- end: ftd.row
 
 -- end: ftd.row
 
@@ -241,7 +248,7 @@ $on-mouse-enter$: $ftd.set-bool($a = $navbar-text.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-text.is-active, v = false)
 
 -- ftd.text: $navbar-text.cta-text
-role: $inherited.types.label-large
+role: $inherited.types.label-small
 color: #333333
 color if { navbar-text.is-active } : #de2d18
 align-self: center
