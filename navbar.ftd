@@ -5,12 +5,6 @@ optional string cta-text-1:
 optional string cta-text-2:
 optional string cta-text-3:
 optional string cta-text-4:
-optional string cta-text-5:
-optional string cta-text-6:
-optional string cta-text-7:
-optional string cta-text-8:
-optional string cta-text-9:
-optional string cta-text-10:
 
 
 -- ftd.column:
@@ -55,12 +49,6 @@ optional string cta-text-1:
 optional string cta-text-2:
 optional string cta-text-3:
 optional string cta-text-4:
-optional string cta-text-5:
-optional string cta-text-6:
-optional string cta-text-7:
-optional string cta-text-8:
-optional string cta-text-9:
-optional string cta-text-10:
 ftd.image-src menu: $assets.files.images.menu.svg
 ftd.image-src close: $assets.files.images.close.svg
 boolean $open: false
