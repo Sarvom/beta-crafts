@@ -15,6 +15,7 @@ cta-text-6: Ethos
 
 -- component navbar:
 ftd.image-src logo:
+optional caption name:
 optional string cta-text-1:
 optional string cta-text-2:
 optional string cta-text-3:
