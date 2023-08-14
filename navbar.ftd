@@ -1,7 +1,6 @@
 
 -- component navbar:
 ftd.image-src logo:
-optional caption name:
 optional string cta-text-1:
 optional string cta-text-2:
 optional string cta-text-3:
@@ -21,7 +20,6 @@ sticky: true
 
 -- navbar-mobile:
 if: { ftd.device == "mobile" }
-name: $navbar.name
 cta-text-1: $navbar.cta-text-1
 cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
@@ -31,7 +29,6 @@ logo: $navbar.logo
 
 -- navbar-desktop:
 if: { ftd.device == "desktop" }
-name: $navbar.name
 cta-text-1: $navbar.cta-text-1
 cta-text-2: $navbar.cta-text-2
 cta-text-3: $navbar.cta-text-3
@@ -141,8 +138,6 @@ margin-top.px: 24
 spacing.fixed.px: 8
 align-content: center
 
-
-
 -- end: ftd.row
 
 -- end: ftd.column
@@ -162,7 +157,6 @@ align-content: center
 
 -- component navbar-desktop:
 ftd.image-src logo:
-optional caption name:
 optional string cta-text-1:
 optional string cta-text-2:
 optional string cta-text-3:
@@ -211,8 +205,6 @@ spacing.fixed.px: 16
 align-self: center
 align-content: right
 margin-right.vw: 4
-
-
 
 -- end: ftd.row
 
