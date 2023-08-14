@@ -1,7 +1,7 @@
 -- import: fastn
 
 -- fastn.package: sarvom.github.io/beta-crafts
-favicon: /-/sarvom.github.io/beta-crafts/assets/logo.png
+favicon: /-/sarvom.github.io/beta-crafts/assets/favicon.png
 
 -- fastn.dependency: fastn-community.github.io/doc-site as doc-site
 -- fastn.dependency: fastn-community.github.io/footer
@@ -14,5 +14,3 @@ favicon: /-/sarvom.github.io/beta-crafts/assets/logo.png
 -- fastn.sitemap:
 
 # Home: index.html
-
-- Right Sidebar Sample: /sidebar/
