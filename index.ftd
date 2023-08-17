@@ -66,45 +66,7 @@ pic: $assets.files.assets.who-we-work-with.png
 highlight-text: Key Areas
 post-text: where we help SaaS businesses
 
--- lib.card-section:
 
--- card.card: Go-to-Market Strategy and Funnel Optimization
-text-1: Develop effective go-to-market strategies targeting the right customers, utilizing appropriate channels, and optimizing marketing spend to maximize returns
-text-2: Define and set up the GTM funnel with the right tools.
-text-3: Establish an analytical framework to optimize marketing and sales funnels, driving more leads and increasing revenue.
-
--- card.card: Revenue and Business Model Design
-text-1: Collaborate to develop a customized revenue and business model aligned with company goals and needs.
-text-2: Include everything from pricing strategy and revenue forecasting to optimization.
-text-3: Guide in devising a product pricing strategy that best suits the business model.
-
--- card.card: Sales and Customer Success Systems Design
-text-1: Set up hunting and farming sales teams and provide necessary coaching.
-text-2: Design and implement customer success systems that improve retention, reduce churn, and maximize customer lifetime value.
-text-3: Put in place a well-structured incentive system to motivate sales teams and boost performance.
-
--- card.card: Empowerment and Partner Ecosystem Development
-text-1: Uncover core strengths and identify areas for maximum impact using our unique Empowerment Model.
-text-2: Conduct a comprehensive analysis of the company's customer base, product offering, and team dynamics.
-text-3: Assist in building and growing a robust partner ecosystem, expanding reach and unlocking new revenue streams.
-
--- card.card: Product-Ops and Product-Growth Design
-text-1: Product strategy, roadmap design, and prioritisation
-text-2: Demo design and sales enablement
-text-3: User Research and customer discovery
-text-4: Product ops design and process enhancement
-text-5: Product analytics design and insight enhancement
-text-6: PLG design and refinement strategy
-
--- card.card: Growth execution support
-text-1: Performance and affiliate marketing
-text-2: Account and field marketing
-text-3: Inside sales partners and revenue operations
-text-4: Customer onboarding and post sales support
-text-5: Product engineering for growth
-text-6: Shared services ( compliance, people, and GCCs) for growth
-
--- end: lib.card-section
 
 -- end: lib.content-section
 
