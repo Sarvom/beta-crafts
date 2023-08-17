@@ -11,7 +11,8 @@ optional string text-8:
 
 -- ftd.column:
 width.fixed.px: 496
-height.fixed.px: 256
+height: auto
+min-height.fixed.px: 256
 border-color: #333333
 border-width.px: 1
 border-radius.px: 20
