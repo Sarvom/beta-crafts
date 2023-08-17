@@ -63,7 +63,7 @@ boolean $open: false
 -- ftd.column:
 padding.px: 8
 width: fill-container
-background.solid: #FFFFFF
+background.solid: #f6f6ef
 height: hug-content
 
 -- ftd.row:
@@ -178,6 +178,7 @@ width: fill-container
 spacing: space-around
 padding.vh: 1
 height.fixed.vh: 10
+background.solid: #f6f6ef
 align-content: center
 z-index: 99999
 sticky: true
