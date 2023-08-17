@@ -208,6 +208,27 @@ wrap: true
 
 
 
+-- component client-section:
+children c:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+padding-horizontal.px: 200
+spacing.fixed.px: 32
+children: $client-section.c
+wrap: true
+
+-- end: ftd.row
+
+-- end: client-section
+
+
+
+
+
+
+
 
 -- component image-content:
 ftd.image-src pic:
@@ -223,3 +244,26 @@ width.fixed.percent: 70
 -- end: ftd.column
 
 -- end: image-content
+
+
+
+
+
+
+
+
+
+-- component image-content-2:
+ftd.image-src pic:
+
+-- ftd.column:
+align-content: center
+
+-- ftd.image:
+src: $image-content-2.pic
+max-width.fixed.px: 300
+max-height.fixed.px: 150
+
+-- end: ftd.column
+
+-- end: image-content-2
