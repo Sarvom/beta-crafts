@@ -1,5 +1,8 @@
 -- import: sarvom.github.io/beta-crafts/navbar as navbar
 -- import: sarvom.github.io/beta-crafts/lib 
+-- import: sarvom.github.io/beta-crafts/content 
+-- import: sarvom.github.io/beta-crafts/card
+-- import: sarvom.github.io/beta-crafts/fonts as fonts 
 
 -- lib.page:
 
@@ -11,5 +14,153 @@ cta-text-3: Clients
 cta-text-4: Sectors
 cta-text-5: Approach
 cta-text-6: Ethos
+
+-- lib.hero:
+pic: $assets.files.assets.hero.png
+text-1: Designing great SaaS businesses can be hard
+text-2: We empower you to achieve growth by design 
+
+-- lib.body-content:
+
+In the rapidly evolving SaaS industry, differentiation and sustainability are more 
+critical than ever. As a team of seasoned SaaS entrepreneurs, advisors, consultants, and 
+angel investors, we understand the pressure to stand out in a crowded market and the need 
+to attract and retain customers amidst swift technological changes. 
+
+Leveraging our 15 years of experience in building and scaling SaaS businesses—some of 
+which have been acquired by top global software companies—we bring a rich perspective to 
+the unique challenges faced by SaaS startups.
+
+
+
+-- lib.body-content:
+
+We relish the opportunity to collaborate with founders and their teams, helping them 
+balance growth ambitions with profitability.
+
+Our focus lies in three key areas of your company: your customers, your product, and your 
+team. We help identify high ROI opportunities and decide which levers are most critical to 
+pull, and in what order, to elevate your business. Our approach is driven by a commitment 
+to customer-led, revenue-generating growth, ensuring your SaaS business not only survives 
+but thrives in this competitive landscape.
+
+-- end: lib.hero
+
+-- lib.content-section:
+
+-- lib.text-with-underline: Who we work with
+
+-- lib.body-content: 
+
+We help SaaS ventures at USD 0.5 to 1 million ARR grow to ARR of USD 5 million and 
+achieve healthy fundamentals.
+
+-- lib.image-content:
+pic: $assets.files.assets.who-we-work-with.png
+
+-- end: lib.content-section
+
+-- lib.content-section:
+
+-- lib.heading: 
+highlight-text: Key Areas
+post-text: where we help SaaS businesses
+
+-- lib.card-section:
+
+-- card.card: Go-to-Market Strategy and Funnel Optimization
+text-1: Develop effective go-to-market strategies targeting the right customers, utilizing appropriate channels, and optimizing marketing spend to maximize returns
+text-2: Define and set up the GTM funnel with the right tools.
+text-3: Establish an analytical framework to optimize marketing and sales funnels, driving more leads and increasing revenue.
+
+-- card.card: Revenue and Business Model Design
+text-1: Collaborate to develop a customized revenue and business model aligned with company goals and needs.
+text-2: Include everything from pricing strategy and revenue forecasting to optimization.
+text-3: Guide in devising a product pricing strategy that best suits the business model.
+
+-- card.card: Sales and Customer Success Systems Design
+text-1: Set up hunting and farming sales teams and provide necessary coaching.
+text-2: Design and implement customer success systems that improve retention, reduce churn, and maximize customer lifetime value.
+text-3: Put in place a well-structured incentive system to motivate sales teams and boost performance.
+
+-- card.card: Empowerment and Partner Ecosystem Development
+text-1: Uncover core strengths and identify areas for maximum impact using our unique Empowerment Model.
+text-2: Conduct a comprehensive analysis of the company's customer base, product offering, and team dynamics.
+text-3: Assist in building and growing a robust partner ecosystem, expanding reach and unlocking new revenue streams.
+
+-- card.card: Product-Ops and Product-Growth Design
+text-1: Product strategy, roadmap design, and prioritisation
+text-2: Demo design and sales enablement
+text-3: User Research and customer discovery
+text-4: Product ops design and process enhancement
+text-5: Product analytics design and insight enhancement
+text-6: PLG design and refinement strategy
+
+-- card.card: Growth execution support
+text-1: Performance and affiliate marketing
+text-2: Account and field marketing
+text-3: Inside sales partners and revenue operations
+text-4: Customer onboarding and post sales support
+text-5: Product engineering for growth
+text-6: Shared services ( compliance, people, and GCCs) for growth
+
+-- end: lib.card-section
+
+-- end: lib.content-section
+
+-- lib.content-section:
+
+-- lib.heading:
+highlight-text: Our Engagement Model
+
+-- lib.image-content:
+pic: $assets.files.assets.engagement-model.png
+
+-- end: lib.content-section
+
+-- lib.content-section:
+
+-- lib.heading: We help you redesign your SaaS business by
+highlight-text: advising
+post-text: on
+-- content.image-with-content: SaaS Business Design
+pic: $assets.files.assets.assistance1.png
+number: 1
+
+Every interaction matters. A SaaS business must be held accountable for the entire 
+experience, not just a part. In a competitive landscape, one negative interaction has the 
+power to damage a relationship. We advise SaaS business to find the breakdowns in customer 
+experiences and latent issues and then craft a strategy to fix them both. We help them 
+design an ecosystem (not just the product in isolation) that works in unison and creates 
+an experience that drives them ahead of the competition.
+
+-- content.image-with-content-2: SaaS Product Design
+pic: $assets.files.assets.assistance2.png
+number: 2
+
+The evolution from physical to digital requires attention to detail every step of the way. 
+Digital design is more than a pretty user interface. It is the synergy of two elements—a 
+powerful tool for the task at hand, refined to a minimal ideal. The most effective product 
+design is the one you hardly notice. We advise SaaS companies on how they can tackle their 
+journey of digital evolution.
+
+-- content.image-with-content: SaaS Positioning and Messaging Design
+pic: $assets.files.assets.assistance3.png
+number: 3
+
+There have never been more SaaS products, more innovation, more noise. It's not enough to 
+simply be the better technology. You have to show people how your technology could make 
+their life better.
+
+Many SaaS companies try to convey the power of their solutions with “tech talk” - it's all 
+about the cool features and functionality. But this approach doesn't work. Prospects tune 
+out the buzzwords and move on.
+
+We believe in a better way. The approach that we prefer is one that makes sure you tell a 
+story that hits home with your prospects. The goal is to help you sell the value of 
+complex products, differentiate from competitors and own your truth as an organisation.
+
+-- end: lib.content-section
+
 
 -- end: lib.page

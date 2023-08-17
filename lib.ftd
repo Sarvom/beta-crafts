@@ -1,11 +1,13 @@
--- import: fifthtry.github.io/admint-typography
+-- import: sarvom.github.io/beta-crafts/fonts as fonts
+
 
 -- component page:
 children c:
 
 -- ftd.column:
 width: fill-container
-types: $admint-typography.types
+types: $fonts.types
+background.solid: #f6f6ef
 
 -- ftd.column:
 width: fill-container
@@ -30,12 +32,194 @@ children: $page.c
 ftd.image-src pic:
 string text-1:
 string text-2:
-body body-1:
-body body-2:
+children content:
 
 -- ftd.column:
+width: fill-container
+align-content: center
 
+
+-- ftd.row:
+align-content: center
+margin-top.px: 48
+margin-horizontal.px: 256
+spacing.fixed.px: 32
+
+-- ftd.image:
+src: $hero.pic
+width.fixed.percent: 90
+
+-- ftd.column:
+align-content: center
+align-self: center
+
+-- ftd.text: $hero.text-1
+role: $inherited.types.heading-medium
+style: regular
+
+-- ftd.text: $hero.text-2
+role: $inherited.types.heading-medium
+style: regular
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+margin-horizontal.px: 256
+children: $hero.content
+
+-- end: ftd.row
 
 -- end: ftd.column
 
 -- end: hero
+
+
+
+
+
+
+
+
+
+-- component body-content:
+body body:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding.px: 24
+
+-- ftd.text:
+role: $inherited.types.label-small
+
+$body-content.body
+
+-- end: ftd.column
+
+-- end: body-content
+
+
+
+
+
+
+
+
+
+-- component text-with-underline:
+caption text:
+
+-- ftd.column:
+border-bottom-width.px: 4
+border-color: #de2d18
+
+-- ftd.text: $text-with-underline.text
+role: $inherited.types.heading-small
+
+-- end: ftd.column
+
+-- end: text-with-underline
+
+
+
+
+
+
+
+
+
+-- component heading:
+optional caption pre-text:
+optional string highlight-text:
+optional string post-text:
+
+
+-- ftd.row:
+spacing.fixed.px: 8
+margin-bottom.px: 16
+
+-- ftd.text: $heading.pre-text
+if: { heading.pre-text != NULL }
+role: $inherited.types.heading-small
+style: regular
+
+-- text-with-underline: $heading.highlight-text
+if: { heading.highlight-text != NULL }
+
+-- ftd.text: $heading.post-text
+if: { heading.post-text != NULL }
+role: $inherited.types.heading-small
+style: regular
+
+-- end: ftd.row
+
+-- end: heading
+
+
+
+
+
+
+
+
+
+-- component content-section:
+children c:
+
+-- ftd.column:
+width: fill-container
+margin-vertical.vh: 5
+align-content: center
+children: $content-section.c
+
+-- end: ftd.column
+
+-- end: content-section
+
+
+
+
+
+
+
+
+
+-- component card-section:
+children c:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+spacing.fixed.px: 32
+children: $card-section.c
+wrap: true
+
+-- end: ftd.row
+
+-- end: card-section
+
+
+
+
+
+
+
+
+
+
+-- component image-content:
+ftd.image-src pic:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+-- ftd.image:
+src: $image-content.pic
+width.fixed.percent: 70
+
+-- end: ftd.column
+
+-- end: image-content
