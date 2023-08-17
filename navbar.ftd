@@ -10,6 +10,7 @@ string cta-text-6:
 
 -- ftd.column:
 width: fill-container
+background.solid: #f6f6ef
 z-index: 1000
 sticky: true
 
@@ -177,7 +178,6 @@ width: fill-container
 spacing: space-around
 padding.vh: 1
 height.fixed.vh: 10
-background.solid: #FFFFFF
 align-content: center
 z-index: 99999
 sticky: true
