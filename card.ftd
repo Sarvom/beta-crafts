@@ -1,4 +1,70 @@
+-- component card:
+caption title:
+optional string text-1:
+optional string text-2:
+optional string text-3:
+optional string text-4:
+optional string text-5:
+optional string text-6:
+optional string text-7:
+optional string text-8:
 
+-- ftd.column:
+width.fixed.px: 496
+height: auto
+min-height.fixed.px: 256
+border-color: #333333
+border-width.px: 1
+border-radius.px: 20
+padding.px: 16
+
+-- title-with-numbered-list: $card.title
+
+-- list-item:
+if: { card.text-1 != NULL }
+index: 1
+text: $card.text-1
+
+-- list-item:
+if: { card.text-2 != NULL }
+index: 2
+text: $card.text-2
+
+-- list-item:
+if: { card.text-3 != NULL }
+index: 3
+text: $card.text-3
+
+-- list-item:
+if: { card.text-4 != NULL }
+index: 4
+text: $card.text-4
+
+-- list-item:
+if: { card.text-5 != NULL }
+index: 5
+text: $card.text-5
+
+-- list-item:
+if: { card.text-6 != NULL }
+index: 6
+text: $card.text-6
+
+-- list-item:
+if: { card.text-7 != NULL }
+index: 7
+text: $card.text-7
+
+-- list-item:
+if: { card.text-8 != NULL }
+index: 8
+text: $card.text-8
+
+-- end: title-with-numbered-list
+
+-- end: ftd.column
+
+-- end: card
 
 
 
@@ -76,7 +142,8 @@ caption title:
 
 
 -- ftd.column:
-min-width.fixed.px: 400
+min-width.fixed.px if { ftd.device == "desktop" }: 400
+min-width.fixed.px if { ftd.device == "mobile" }: 320
 height: auto
 ;;min-height.fixed.px: 256
 border-color: #333333

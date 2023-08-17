@@ -10,7 +10,6 @@ string cta-text-6:
 
 -- ftd.column:
 width: fill-container
-background.solid: #f6f6ef
 z-index: 1000
 sticky: true
 
@@ -56,8 +55,8 @@ string cta-text-3:
 string cta-text-4:
 string cta-text-5:
 string cta-text-6:
-ftd.image-src menu: $assets.files.images.nav_icon_mobile.png
-ftd.image-src close: $assets.files.images.close.svg
+ftd.image-src menu: $assets.files.assets.nav_icon_mobile.png
+ftd.image-src close: $assets.files.assets.close_black.png
 boolean $open: false
 
 -- ftd.column:
@@ -77,14 +76,14 @@ margin-left.px: 8
 
 -- ftd.image:
 if: { !navbar-mobile.open }
-height.fixed.px: 32
+height.fixed.px: 16
 align-self: center
 src: $navbar-mobile.menu
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = true)
 
 -- ftd.image:
 if: { navbar-mobile.open }
-height.fixed.px: 32
+height.fixed.px: 16
 align-self: center
 src: $navbar-mobile.close
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
@@ -100,44 +99,44 @@ align-content: left
 padding-left.px: 16
 
 -- ftd.text: $navbar-mobile.cta-text-1
-role: $inherited.types.heading-tiny
+role: $inherited.types.label-small
 margin-top.px: 8
-color: white
+color: #000000
 link: index.html
 
 -- ftd.text: $navbar-mobile.cta-text-2
-role: $inherited.types.heading-tiny
+role: $inherited.types.label-small
 margin-top.px: 8
-color: white
+color: #000000
 link: index.html#aboutus
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 
 -- ftd.text: $navbar-mobile.cta-text-3
-role: $inherited.types.heading-tiny
+role: $inherited.types.label-small
 margin-top.px: 8
-color: white
+color: #000000
 link: index.html#sponsors
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- ftd.text: $navbar-mobile.cta-text-4
-role: $inherited.types.heading-tiny
+role: $inherited.types.label-small
 margin-top.px: 8
-color: white
+color: #000000
 link: index.html#participate
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- ftd.text: $navbar-mobile.cta-text-5
-role: $inherited.types.heading-tiny
+role: $inherited.types.label-small
 margin-top.px: 8
-color: white
+color: #000000
 link: index.html#participate
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- ftd.text: $navbar-mobile.cta-text-6
-role: $inherited.types.heading-tiny
+role: $inherited.types.label-small
 margin-top.px: 8
-color: white
+color: #000000
 link: index.html#participate
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
