@@ -6,7 +6,7 @@
 
 -- lib.page:
 
--- navbar.navbar-desktop:
+-- navbar.navbar:
 logo: $assets.files.assets.logo.png
 cta-text-1: Offerings
 cta-text-2: Team
@@ -66,7 +66,45 @@ pic: $assets.files.assets.who-we-work-with.png
 highlight-text: Key Areas
 post-text: where we help SaaS businesses
 
+-- lib.card-section:
 
+-- card.card: Go-to-Market Strategy and Funnel Optimization
+text-1: Develop effective go-to-market strategies targeting the right customers, utilizing appropriate channels, and optimizing marketing spend to maximize returns
+text-2: Define and set up the GTM funnel with the right tools.
+text-3: Establish an analytical framework to optimize marketing and sales funnels, driving more leads and increasing revenue.
+
+-- card.card: Revenue and Business Model Design
+text-1: Collaborate to develop a customized revenue and business model aligned with company goals and needs.
+text-2: Include everything from pricing strategy and revenue forecasting to optimization.
+text-3: Guide in devising a product pricing strategy that best suits the business model.
+
+-- card.card: Sales and Customer Success Systems Design
+text-1: Set up hunting and farming sales teams and provide necessary coaching.
+text-2: Design and implement customer success systems that improve retention, reduce churn, and maximize customer lifetime value.
+text-3: Put in place a well-structured incentive system to motivate sales teams and boost performance.
+
+-- card.card: Empowerment and Partner Ecosystem Development
+text-1: Uncover core strengths and identify areas for maximum impact using our unique Empowerment Model.
+text-2: Conduct a comprehensive analysis of the company's customer base, product offering, and team dynamics.
+text-3: Assist in building and growing a robust partner ecosystem, expanding reach and unlocking new revenue streams.
+
+-- card.card: Product-Ops and Product-Growth Design
+text-1: Product strategy, roadmap design, and prioritisation
+text-2: Demo design and sales enablement
+text-3: User Research and customer discovery
+text-4: Product ops design and process enhancement
+text-5: Product analytics design and insight enhancement
+text-6: PLG design and refinement strategy
+
+-- card.card: Growth execution support
+text-1: Performance and affiliate marketing
+text-2: Account and field marketing
+text-3: Inside sales partners and revenue operations
+text-4: Customer onboarding and post sales support
+text-5: Product engineering for growth
+text-6: Shared services ( compliance, people, and GCCs) for growth
+
+-- end: lib.card-section
 
 -- end: lib.content-section
 
@@ -165,6 +203,9 @@ pic: $assets.files.assets.tan90.png
 -- lib.image-content-2:
 pic: $assets.files.assets.Viamagus.svg
 
+-- lib.image-content-2:
+pic: $assets.files.assets.Zirohlabs.png
+
 -- end: lib.client-section
 
 
@@ -237,6 +278,49 @@ out the buzzwords and move on.
 We believe in a better way. The approach that we prefer is one that makes sure you tell a 
 story that hits home with your prospects. The goal is to help you sell the value of 
 complex products, differentiate from competitors and own your truth as an organisation.
+
+-- end: lib.content-section
+
+-- lib.content-section:
+
+-- lib.heading: Our
+highlight-text: Ethos
+
+-- lib.card-section:
+
+-- content.content-with-number: Get out of the building - Empathy is everything
+number: 1
+
+We can only learn human needs—and uncover problem areas—by meeting people where they are. 
+So we engage people in thoughtful dialogue and watch them work and play, in their space, 
+not ours.
+
+-- content.content-with-number: Iterate with curiosity
+number: 2
+
+Evolution requires being open to change. Human systems are flexible, should be questioned, 
+and can be altered. We scrutinise assumptions and go all the way back to root causes to 
+begin our explorations.
+
+-- content.content-with-number: Don't just talk about it. Make it
+number: 3
+
+Pictures have power. We go out of our way to bring ideas to life through visualisations 
+that shape stories, have meaning, and bolster support.
+
+-- content.content-with-number: Have an opinion
+number: 4
+
+Big transformation comes from bold ideas. We bring unique perspectives to the table 
+to help drive great work forward.
+
+-- content.content-with-number: Live and die by quality
+number: 5
+
+Work is only as good as the caliber of the people creating it. We scale our team 
+thoughtfully—and pitch who you get—which makes every project team an A team.
+
+-- end: lib.card-section
 
 -- end: lib.content-section
 

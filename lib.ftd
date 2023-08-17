@@ -15,6 +15,15 @@ children: $page.c
 
 -- end: ftd.column
 
+-- footer: connect@betacrafts.io
+logo: $assets.files.assets.logo.png
+text-1: Evolve
+text-2: Offerings
+text-3: Solution
+text-4: Sectors
+text-5: Assistance
+text-6: Ethos
+
 -- end: ftd.column
 
 -- end: page
@@ -39,6 +48,95 @@ width: fill-container
 align-content: center
 
 
+-- hero-mobile:
+if: { ftd.device == "mobile" }
+pic: $hero.pic
+text-1: $hero.text-1
+text-2: $hero.text-2
+
+-- hero-desktop:
+if: { ftd.device == "desktop" }
+pic: $hero.pic
+text-1: $hero.text-1
+text-2: $hero.text-2
+
+-- end: ftd.column
+
+-- end: hero
+
+
+
+
+
+
+
+
+
+-- component hero-mobile:
+ftd.image-src pic:
+string text-1:
+string text-2:
+children content:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+
+-- ftd.column:
+align-content: center
+
+-- ftd.column:
+align-content: center
+align-self: center
+
+-- ftd.text: $hero-mobile.text-1
+role: $inherited.types.heading-medium
+style: regular
+text-align: center
+
+-- ftd.text: $hero-mobile.text-2
+role: $inherited.types.heading-medium
+style: semi-bold
+text-align: center
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $hero-mobile.pic
+width.fixed.percent: 90
+
+-- end: ftd.column
+
+-- ftd.column:
+margin-horizontal.px: 256
+children: $hero-mobile.content
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-mobile
+
+
+
+
+
+
+
+
+
+-- component hero-desktop:
+ftd.image-src pic:
+string text-1:
+string text-2:
+children content:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+
+
 -- ftd.row:
 align-content: center
 margin-top.px: 48
@@ -46,20 +144,20 @@ margin-horizontal.px: 256
 spacing.fixed.px: 32
 
 -- ftd.image:
-src: $hero.pic
+src: $hero-desktop.pic
 width.fixed.percent: 90
 
 -- ftd.column:
 align-content: center
 align-self: center
 
--- ftd.text: $hero.text-1
+-- ftd.text: $hero-desktop.text-1
 role: $inherited.types.heading-medium
 style: regular
 
--- ftd.text: $hero.text-2
+-- ftd.text: $hero-desktop.text-2
 role: $inherited.types.heading-medium
-style: regular
+style: semi-bold
 
 -- end: ftd.column
 
@@ -67,13 +165,13 @@ style: regular
 
 -- ftd.row:
 margin-horizontal.px: 256
-children: $hero.content
+children: $hero-desktop.content
 
 -- end: ftd.row
 
 -- end: ftd.column
 
--- end: hero
+-- end: hero-desktop
 
 
 
@@ -93,6 +191,7 @@ padding.px: 24
 
 -- ftd.text:
 role: $inherited.types.label-small
+text-align if { ftd.device == "mobile"}: center
 
 $body-content.body
 
@@ -117,6 +216,8 @@ border-color: #de2d18
 
 -- ftd.text: $text-with-underline.text
 role: $inherited.types.heading-small
+text-align: center
+
 
 -- end: ftd.column
 
@@ -139,11 +240,14 @@ optional string post-text:
 -- ftd.row:
 spacing.fixed.px: 8
 margin-bottom.px: 16
+align-content: center
+wrap: true
 
 -- ftd.text: $heading.pre-text
 if: { heading.pre-text != NULL }
 role: $inherited.types.heading-small
 style: regular
+text-align: center
 
 -- text-with-underline: $heading.highlight-text
 if: { heading.highlight-text != NULL }
@@ -152,6 +256,8 @@ if: { heading.highlight-text != NULL }
 if: { heading.post-text != NULL }
 role: $inherited.types.heading-small
 style: regular
+text-align: center
+
 
 -- end: ftd.row
 
@@ -267,3 +373,206 @@ max-height.fixed.px: 150
 -- end: ftd.column
 
 -- end: image-content-2
+
+
+
+
+
+
+
+
+
+-- component footer:
+ftd.image-src logo:
+caption cta-text:
+string text-1:
+string text-2:
+string text-3:
+string text-4:
+string text-5:
+string text-6:
+optional string text-7:
+optional string text-8:
+
+-- ftd.column:
+width: fill-container
+
+-- footer-mobile:
+if: { ftd.device == "mobile" }
+text-1: $footer.text-1
+text-2: $footer.text-2
+text-3: $footer.text-3
+text-4: $footer.text-4
+text-5: $footer.text-5
+text-6: $footer.text-6
+cta-text: $footer.cta-text
+logo: $footer.logo
+
+-- footer-desktop:
+if: { ftd.device == "desktop" }
+text-1: $footer.text-1
+text-2: $footer.text-2
+text-3: $footer.text-3
+text-4: $footer.text-4
+text-5: $footer.text-5
+text-6: $footer.text-6
+cta-text: $footer.cta-text
+logo: $footer.logo
+
+-- end: ftd.column
+
+-- end: footer
+
+
+
+
+
+
+
+
+
+-- component footer-mobile:
+ftd.image-src logo:
+caption cta-text:
+string text-1:
+string text-2:
+string text-3:
+string text-4:
+string text-5:
+string text-6:
+optional string text-7:
+optional string text-8:
+
+-- ftd.column:
+width: fill-container
+spacing: space-around
+padding.vh: 1
+align-content: center
+
+-- ftd.column:
+
+
+-- ftd.image:
+src: $footer-mobile.logo
+height.fixed.px: 64
+padding.vh: 1
+align-self: center
+
+-- ftd.text: $footer-mobile.cta-text
+role: $inherited.types.label-large
+align-self: center
+
+-- ftd.row:
+spacing.fixed.px: 12
+height: fill-container
+align-content: center
+wrap: true
+
+-- ftd.text: $footer-mobile.text-1
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-mobile.text-2
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-mobile.text-3
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-mobile.text-4
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-mobile.text-5
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-mobile.text-6
+role: $inherited.types.label-small
+align-self: center
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: footer-mobile
+
+
+
+
+
+
+
+
+
+-- component footer-desktop:
+ftd.image-src logo:
+caption cta-text:
+string text-1:
+string text-2:
+string text-3:
+string text-4:
+string text-5:
+string text-6:
+optional string text-7:
+optional string text-8:
+
+-- ftd.column:
+width: fill-container
+spacing: space-around
+padding.vh: 1
+align-content: center
+
+-- ftd.row:
+margin-horizontal.px: 256
+spacing.fixed.px: 24
+
+-- ftd.image:
+src: $footer-desktop.logo
+height.fixed.px: 64
+padding.vh: 1
+align-self: center
+
+-- ftd.text: $footer-desktop.cta-text
+role: $inherited.types.label-large
+align-self: center
+
+-- ftd.row:
+spacing.fixed.px: 12
+height: fill-container
+align-self: center
+
+-- ftd.text: $footer-desktop.text-1
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-desktop.text-2
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-desktop.text-3
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-desktop.text-4
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-desktop.text-5
+role: $inherited.types.label-small
+align-self: center
+
+-- ftd.text: $footer-desktop.text-6
+role: $inherited.types.label-small
+align-self: center
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: footer-desktop

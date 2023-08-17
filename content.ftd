@@ -56,17 +56,22 @@ border-radius.px: 20
 -- ftd.column:
 margin-vertical.px: 24
 
+-- ftd.row:
+background.solid: #de2d18
+height.fixed.px: 48
+width.fixed.px: 48
+align-content: center
+
 -- ftd.text: $image-with-content-mobile.number
 style: bold
-role: $inherited.types.heading-large
-color: #000000
-margin-horizontal.px: 20
-opacity: 0.7
+role: $inherited.types.heading-medium
+color: #ffffff
+
+-- end: ftd.row
 
 -- ftd.text: $image-with-content-mobile.title
-align-self: center
 style: bold
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-tiny
 css: [ $assets.files.gradient-1.css ]
 classes: color-2
 margin-bottom.px: 8
@@ -75,8 +80,6 @@ margin-bottom.px: 8
 role: $inherited.types.copy-regular
 color: #000000
 opacity: 0.7
-text-align: justify
-margin-horizontal.px: 20
 
 -- end: ftd.column
 
@@ -216,17 +219,22 @@ border-radius.px: 20
 -- ftd.column:
 margin-vertical.px: 24
 
+-- ftd.row:
+background.solid: #de2d18
+height.fixed.px: 48
+width.fixed.px: 48
+align-content: center
+
 -- ftd.text: $image-with-content-mobile-2.number
 style: bold
-role: $inherited.types.heading-large
-color: #000000
-margin-horizontal.px: 20
-opacity: 0.7
+role: $inherited.types.heading-medium
+color: #ffffff
+
+-- end: ftd.row
 
 -- ftd.text: $image-with-content-mobile-2.title
-align-self: center
 style: bold
-role: $inherited.types.heading-medium
+role: $inherited.types.heading-tiny
 css: [ $assets.files.gradient-1.css ]
 classes: color-2
 margin-bottom.px: 8
@@ -236,7 +244,6 @@ role: $inherited.types.copy-regular
 color: #000000
 opacity: 0.7
 text-align: justify
-margin-horizontal.px: 20
 
 -- end: ftd.column
 
@@ -309,3 +316,127 @@ align-self: center
 -- end: ftd.column
 
 -- end: image-with-content-desktop-2
+
+
+
+
+
+
+
+
+
+-- component content-with-number:
+string number:
+caption title:
+body body:
+
+-- ftd.column:
+width: fill-container
+
+-- content-with-number-mobile:
+if: { ftd.device == "mobile" }
+number: $content-with-number.number
+title: $content-with-number.title
+body: $content-with-number.body
+
+-- content-with-number-desktop:
+if: { ftd.device == "desktop" }
+number: $content-with-number.number
+title: $content-with-number.title
+body: $content-with-number.body
+
+-- end: ftd.column
+
+-- end: content-with-number
+
+
+
+
+
+
+-- component content-with-number-mobile:
+string number:
+caption title:
+body body:
+
+-- ftd.column:
+width: fill-container
+margin-vertical.px: 24
+max-width.fixed.px: 256
+
+-- ftd.row:
+background.solid: #de2d18
+height.fixed.px: 48
+width.fixed.px: 48
+align-content: center
+
+-- ftd.text: $content-with-number-mobile.number
+style: bold
+role: $inherited.types.heading-medium
+color: #ffffff
+
+-- end: ftd.row
+
+-- ftd.text: $content-with-number-mobile.title
+style: bold
+role: $inherited.types.heading-tiny
+css: [ $assets.files.gradient-1.css ]
+classes: color-2
+margin-bottom.px: 8
+
+-- ftd.text: $content-with-number-mobile.body
+role: $inherited.types.copy-regular
+color: #000000
+opacity: 0.7
+text-align: justify
+
+-- end: ftd.column
+
+-- end: content-with-number-mobile
+
+
+
+
+
+
+
+
+
+-- component content-with-number-desktop:
+string number:
+caption title:
+body body:
+
+-- ftd.column:
+margin-vertical.px: 50
+align-self: center
+max-width.fixed.px: 256
+
+
+-- ftd.row:
+background.solid: #de2d18
+height.fixed.px: 48
+width.fixed.px: 48
+align-content: center
+
+-- ftd.text: $content-with-number-desktop.number
+style: bold
+role: $inherited.types.heading-large
+color: #ffffff
+
+-- end: ftd.row
+
+-- ftd.text: $content-with-number-desktop.title
+role: $inherited.types.heading-tiny
+css: [ $assets.files.gradient-1.css ]
+classes: color-2
+margin-bottom.px: 38
+
+-- ftd.text: $content-with-number-desktop.body
+role: $inherited.types.copy-regular
+color: #000000
+opacity: 0.7
+
+-- end: ftd.column
+
+-- end: content-with-number-desktop
