@@ -40,7 +40,9 @@ text-6: Ethos
 -- component hero:
 ftd.image-src pic:
 string text-1:
+string color-text:
 string text-2:
+string text-3:
 children content:
 
 -- ftd.column:
@@ -52,13 +54,18 @@ align-content: center
 if: { ftd.device == "mobile" }
 pic: $hero.pic
 text-1: $hero.text-1
+color-text: $hero.color-text
 text-2: $hero.text-2
+text-3: $hero.text-3
+
 
 -- hero-desktop:
 if: { ftd.device == "desktop" }
 pic: $hero.pic
 text-1: $hero.text-1
+color-text: $hero.color-text
 text-2: $hero.text-2
+text-3: $hero.text-3
 
 -- end: ftd.column
 
@@ -75,7 +82,9 @@ text-2: $hero.text-2
 -- component hero-mobile:
 ftd.image-src pic:
 string text-1:
+string color-text:
 string text-2:
+string text-3:
 children content:
 
 -- ftd.column:
@@ -92,10 +101,21 @@ align-self: center
 
 -- ftd.text: $hero-mobile.text-1
 role: $inherited.types.heading-medium
+style: light
+text-align: center
+
+-- ftd.text: $hero-mobile.color-text
+role: $inherited.types.heading-medium
 style: regular
+color: #de2d18
 text-align: center
 
 -- ftd.text: $hero-mobile.text-2
+role: $inherited.types.heading-medium
+style: light
+text-align: center
+
+-- ftd.text: $hero-mobile.text-3
 role: $inherited.types.heading-medium
 style: semi-bold
 text-align: center
@@ -129,7 +149,9 @@ children: $hero-mobile.content
 -- component hero-desktop:
 ftd.image-src pic:
 string text-1:
+string color-text:
 string text-2:
+string text-3:
 children content:
 
 -- ftd.column:
@@ -151,11 +173,25 @@ width.fixed.percent: 90
 align-content: center
 align-self: center
 
+-- ftd.row:
+wrap: true
+
 -- ftd.text: $hero-desktop.text-1
 role: $inherited.types.heading-medium
+style: light
+
+-- ftd.text: $hero-desktop.color-text
+role: $inherited.types.heading-medium
 style: regular
+color: #de2d18
 
 -- ftd.text: $hero-desktop.text-2
+role: $inherited.types.heading-medium
+style: hairline
+
+-- end: ftd.row
+
+-- ftd.text: $hero-desktop.text-3
 role: $inherited.types.heading-medium
 style: semi-bold
 
@@ -328,6 +364,33 @@ wrap: true
 -- end: ftd.row
 
 -- end: client-section
+
+
+
+
+
+
+
+
+
+-- component ethos-section:
+children c:
+
+-- ftd.column:
+margin-horizontal.px: 96
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 64
+align-content: center
+children: $ethos-section.c
+wrap: true
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ethos-section
 
 
 
