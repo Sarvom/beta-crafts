@@ -17,8 +17,10 @@ cta-text-6: Ethos
 
 -- lib.hero:
 pic: $assets.files.assets.hero.png
-text-1: Designing great SaaS businesses can be hard
-text-2: We empower you to achieve growth by design 
+text-1: Designing great  
+color-text: SaaS businesses
+text-2: can be hard 
+text-3: We empower you to achieve growth by design 
 
 -- lib.body-content:
 
@@ -286,7 +288,7 @@ complex products, differentiate from competitors and own your truth as an organi
 -- lib.heading: Our
 highlight-text: Ethos
 
--- lib.card-section:
+-- lib.ethos-section:
 
 -- content.content-with-number: Get out of the building - Empathy is everything
 number: 1
@@ -320,7 +322,7 @@ number: 5
 Work is only as good as the caliber of the people creating it. We scale our team 
 thoughtfully—and pitch who you get—which makes every project team an A team.
 
--- end: lib.card-section
+-- end: lib.ethos-section
 
 -- end: lib.content-section
 
