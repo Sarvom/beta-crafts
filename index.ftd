@@ -20,7 +20,7 @@ pic: $assets.files.assets.hero.png
 text-1: Designing great  
 color-text: SaaS businesses
 text-2: can be hard 
-text-3: We empower you to achieve growth by design 
+text-3:  We empower you to achieve growth by design 
 
 -- lib.body-content:
 
