@@ -72,8 +72,6 @@ color: #ffffff
 -- ftd.text: $image-with-content-mobile.title
 style: bold
 role: $inherited.types.heading-tiny
-css: [ $assets.files.gradient-1.css ]
-classes: color-2
 margin-bottom.px: 8
 
 -- ftd.text: $image-with-content-mobile.body
@@ -136,8 +134,6 @@ color: #FFFFFF
 
 -- ftd.text: $image-with-content-desktop.title
 role: $inherited.types.heading-tiny
-css: [ $assets.files.gradient-1.css ]
-classes: color-2
 margin-bottom.px: 38
 
 -- ftd.text: $image-with-content-desktop.body
@@ -235,8 +231,6 @@ color: #ffffff
 -- ftd.text: $image-with-content-mobile-2.title
 style: bold
 role: $inherited.types.heading-tiny
-css: [ $assets.files.gradient-1.css ]
-classes: color-2
 margin-bottom.px: 8
 
 -- ftd.text: $image-with-content-mobile-2.body
@@ -294,8 +288,6 @@ color: #ffffff
 
 -- ftd.text: $image-with-content-desktop-2.title
 role: $inherited.types.heading-tiny
-css: [ $assets.files.gradient-1.css ]
-classes: color-2
 margin-bottom.px: 38
 
 -- ftd.text: $image-with-content-desktop-2.body
@@ -379,8 +371,6 @@ color: #ffffff
 -- ftd.text: $content-with-number-mobile.title
 style: bold
 role: $inherited.types.heading-tiny
-css: [ $assets.files.gradient-1.css ]
-classes: color-2
 margin-bottom.px: 8
 
 -- ftd.text: $content-with-number-mobile.body
@@ -427,8 +417,6 @@ color: #ffffff
 
 -- ftd.text: $content-with-number-desktop.title
 role: $inherited.types.heading-tiny
-css: [ $assets.files.gradient-1.css ]
-classes: color-2
 margin-bottom.px: 38
 
 -- ftd.text: $content-with-number-desktop.body
