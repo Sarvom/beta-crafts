@@ -6,7 +6,7 @@
 -- import: sarvom.github.io/beta-crafts/fonts as fonts 
 
 -- ds.page: Beta Crafts Documentation
-site-logo: /-/sarvom.github.io/beta-crafts/assets/logo.png
+site-logo: assets/logo.png
 
 -- ds.page.body:
 
