@@ -57,7 +57,7 @@ text-1: $hero.text-1
 color-text: $hero.color-text
 text-2: $hero.text-2
 text-3: $hero.text-3
-
+content: $$hero.content
 
 -- hero-desktop:
 if: { ftd.device == "desktop" }
@@ -66,6 +66,7 @@ text-1: $hero.text-1
 color-text: $hero.color-text
 text-2: $hero.text-2
 text-3: $hero.text-3
+content: $$hero.content
 
 -- end: ftd.column
 
@@ -129,7 +130,7 @@ width.fixed.percent: 90
 -- end: ftd.column
 
 -- ftd.column:
-margin-horizontal.px: 256
+width: fill-container
 children: $hero-mobile.content
 
 -- end: ftd.column
@@ -199,11 +200,16 @@ style: semi-bold
 
 -- end: ftd.row
 
--- ftd.row:
+-- ftd.column:
 margin-horizontal.px: 256
+
+-- ftd.row:
+width: fill-container
 children: $hero-desktop.content
 
 -- end: ftd.row
+
+-- end: ftd.column
 
 -- end: ftd.column
 
