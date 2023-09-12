@@ -3,6 +3,7 @@
 -- import: sarvom.github.io/beta-crafts/content as content
 -- import: sarvom.github.io/beta-crafts/card as card
 -- import: sarvom.github.io/beta-crafts/fonts as fonts 
+-- import: sarvom.github.io/beta-crafts/colors as colors 
 
 -- lib.page:
 

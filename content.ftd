@@ -1,3 +1,5 @@
+-- import: sarvom.github.io/beta-crafts/colors as colors 
+
 -- component image-with-content:
 ftd.image-src pic:
 string number:
@@ -57,7 +59,7 @@ border-radius.px: 20
 margin-vertical.px: 24
 
 -- ftd.row:
-background.solid: #de2d18
+background.solid: $colors.accent-primary-
 height.fixed.px: 48
 width.fixed.px: 48
 align-content: center
@@ -65,7 +67,7 @@ align-content: center
 -- ftd.text: $image-with-content-mobile.number
 style: bold
 role: $inherited.types.heading-medium
-color: #ffffff
+color: $colors.cta-secondary-text-
 
 -- end: ftd.row
 
@@ -73,10 +75,11 @@ color: #ffffff
 style: bold
 role: $inherited.types.heading-tiny
 margin-bottom.px: 8
+color: $colors.text-
 
 -- ftd.text: $image-with-content-mobile.body
 role: $inherited.types.copy-regular
-color: #000000
+color: $colors.text-
 opacity: 0.7
 
 -- end: ftd.column
@@ -120,7 +123,7 @@ margin-vertical.px: 50
 align-self: center
 
 -- ftd.row:
-background.solid: #de2d18
+background.solid: $colors.accent-primary-
 height.fixed.px: 48
 width.fixed.px: 48
 align-content: center
@@ -128,17 +131,18 @@ align-content: center
 -- ftd.text: $image-with-content-desktop.number
 style: bold
 role: $inherited.types.heading-medium
-color: #FFFFFF
+color: $colors.cta-secondary-text-
 
 -- end: ftd.row
 
 -- ftd.text: $image-with-content-desktop.title
 role: $inherited.types.heading-tiny
 margin-bottom.px: 38
+color: $colors.text-
 
 -- ftd.text: $image-with-content-desktop.body
 role: $inherited.types.copy-regular
-color: #000000
+color: $colors.text-
 opacity: 0.7
 
 -- end: ftd.column
@@ -216,7 +220,7 @@ border-radius.px: 20
 margin-vertical.px: 24
 
 -- ftd.row:
-background.solid: #de2d18
+background.solid: $colors.accent-primary-
 height.fixed.px: 48
 width.fixed.px: 48
 align-content: center
@@ -224,7 +228,7 @@ align-content: center
 -- ftd.text: $image-with-content-mobile-2.number
 style: bold
 role: $inherited.types.heading-medium
-color: #ffffff
+color: $colors.cta-secondary-text-
 
 -- end: ftd.row
 
@@ -232,10 +236,11 @@ color: #ffffff
 style: bold
 role: $inherited.types.heading-tiny
 margin-bottom.px: 8
+color: $colors.text-
 
 -- ftd.text: $image-with-content-mobile-2.body
 role: $inherited.types.copy-regular
-color: #000000
+color: $colors.text-
 opacity: 0.7
 text-align: justify
 
@@ -274,7 +279,7 @@ margin-vertical.px: 50
 align-self: center
 
 -- ftd.row:
-background.solid: #de2d18
+background.solid: $colors.accent-primary-
 height.fixed.px: 48
 width.fixed.px: 48
 align-content: center
@@ -282,17 +287,18 @@ align-content: center
 -- ftd.text: $image-with-content-desktop-2.number
 style: bold
 role: $inherited.types.heading-large
-color: #ffffff
+color: $colors.cta-secondary-text-
 
 -- end: ftd.row
 
 -- ftd.text: $image-with-content-desktop-2.title
 role: $inherited.types.heading-tiny
 margin-bottom.px: 38
+color: $colors.text-
 
 -- ftd.text: $image-with-content-desktop-2.body
 role: $inherited.types.copy-regular
-color: #000000
+color: $colors.text-
 opacity: 0.7
 
 -- end: ftd.column
@@ -355,7 +361,7 @@ margin-vertical.px: 24
 max-width.fixed.px: 256
 
 -- ftd.row:
-background.solid: #de2d18
+background.solid: $colors.accent-primary-
 padding.px: 8
 height.fixed.px: 48
 width.fixed.px: 48
@@ -364,7 +370,7 @@ align-content: center
 -- ftd.text: $content-with-number-mobile.number
 style: bold
 role: $inherited.types.heading-small
-color: #ffffff
+color: $colors.cta-secondary-text-
 
 -- end: ftd.row
 
@@ -372,10 +378,11 @@ color: #ffffff
 style: bold
 role: $inherited.types.heading-tiny
 margin-bottom.px: 8
+color: $colors.text-
 
 -- ftd.text: $content-with-number-mobile.body
 role: $inherited.types.copy-regular
-color: #000000
+color: $colors.text-
 opacity: 0.7
 text-align: justify
 
@@ -402,7 +409,7 @@ max-width.fixed.px: 320
 min-height.fixed.px: 296
 
 -- ftd.row:
-background.solid: #de2d18
+background.solid: $colors.accent-primary-
 padding.px: 8
 height.fixed.px: 48
 width.fixed.px: 48
@@ -411,17 +418,18 @@ align-content: center
 -- ftd.text: $content-with-number-desktop.number
 style: bold
 role: $inherited.types.heading-small
-color: #ffffff
+color: $colors.cta-secondary-text-
 
 -- end: ftd.row
 
 -- ftd.text: $content-with-number-desktop.title
 role: $inherited.types.heading-tiny
 margin-bottom.px: 38
+color: $colors.text-
 
 -- ftd.text: $content-with-number-desktop.body
 role: $inherited.types.copy-regular
-color: #000000
+color: $colors.text-
 opacity: 0.7
 
 -- end: ftd.column

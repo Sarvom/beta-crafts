@@ -1,3 +1,5 @@
+-- import: sarvom.github.io/beta-crafts/colors as colors 
+
 -- component navbar:
 ftd.image-src logo:
 string cta-text-1:
@@ -62,7 +64,7 @@ boolean $open: false
 -- ftd.column:
 padding.px: 8
 width: fill-container
-background.solid: #f6f6ef
+background.solid: $colors.base-
 height: hug-content
 
 -- ftd.row:
@@ -101,13 +103,13 @@ padding-left.px: 16
 -- ftd.text: $navbar-mobile.cta-text-1
 role: $inherited.types.label-small
 margin-top.px: 8
-color: #000000
+color: $colors.text-
 link: index.html
 
 -- ftd.text: $navbar-mobile.cta-text-2
 role: $inherited.types.label-small
 margin-top.px: 8
-color: #000000
+color: $colors.text-
 link: index.html#aboutus
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
@@ -115,28 +117,28 @@ $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 -- ftd.text: $navbar-mobile.cta-text-3
 role: $inherited.types.label-small
 margin-top.px: 8
-color: #000000
+color: $colors.text-
 link: index.html#sponsors
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- ftd.text: $navbar-mobile.cta-text-4
 role: $inherited.types.label-small
 margin-top.px: 8
-color: #000000
+color: $colors.text-
 link: index.html#participate
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- ftd.text: $navbar-mobile.cta-text-5
 role: $inherited.types.label-small
 margin-top.px: 8
-color: #000000
+color: $colors.text-
 link: index.html#participate
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
 -- ftd.text: $navbar-mobile.cta-text-6
 role: $inherited.types.label-small
 margin-top.px: 8
-color: #000000
+color: $colors.text-
 link: index.html#participate
 $on-click$: $ftd.set-bool($a = $navbar-mobile.open, v = false)
 
@@ -177,7 +179,7 @@ width: fill-container
 spacing: space-around
 padding.vh: 1
 height.fixed.vh: 10
-background.solid: #f6f6ef
+background.solid: $colors.base-
 align-content: center
 z-index: 99999
 sticky: true
@@ -242,14 +244,14 @@ height: fill-container
 align-content: center
 margin-horizontal.vh: 2
 border-top-width.px if { navbar-text.is-active }: 4
-border-color: #de2d18
+border-color: $colors.accent-primary-
 $on-mouse-enter$: $ftd.set-bool($a = $navbar-text.is-active, v = true)
 $on-mouse-leave$: $ftd.set-bool($a = $navbar-text.is-active, v = false)
 
 -- ftd.text: $navbar-text.cta-text
 role: $inherited.types.label-small
-color: #333333
-color if { navbar-text.is-active } : #de2d18
+color: $colors.cta-primary-text-
+color if { navbar-text.is-active } : $colors.accent-primary-
 align-self: center
 link: $$navbar-text.cta-text-url
 
