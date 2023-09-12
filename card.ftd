@@ -1,3 +1,5 @@
+-- import: sarvom.github.io/beta-crafts/colors as colors 
+
 -- component card:
 caption title:
 optional string text-1:
@@ -13,7 +15,7 @@ optional string text-8:
 width.fixed.px: 496
 height: auto
 min-height.fixed.px: 256
-border-color: #333333
+border-color: $colors.cta-primary-text-
 border-width.px: 1
 border-radius.px: 20
 padding.px: 16
@@ -82,6 +84,7 @@ children list:
 
 -- ftd.text: $title-with-numbered-list.title
 role: $inherited.types.label-large
+color: $colors.text-
 style: semi-bold
 opacity: 0.7
 margin-bottom.px: 8
@@ -115,15 +118,17 @@ spacing.fixed.px: 8
 
 -- ftd.text: $list-item.index
 role: $inherited.types.copy-regular
+color: $colors.text-
 
 -- ftd.text: .
 role: $inherited.types.copy-regular
+color: $colors.text-
 
 -- end: ftd.row
 
 -- ftd.text: $list-item.text
 role: $inherited.types.copy-regular
-
+color: $colors.text-
 
 -- end: ftd.row
 
@@ -146,7 +151,7 @@ min-width.fixed.px if { ftd.device == "desktop" }: 400
 min-width.fixed.px if { ftd.device == "mobile" }: 320
 height: auto
 ;;min-height.fixed.px: 256
-border-color: #333333
+border-color: $colors.cta-primary-text-
 border-width.px: 1
 border-radius.px: 20
 padding.px: 16
@@ -154,6 +159,7 @@ align-content: center
 
 -- ftd.text: $card-2.title
 role: $inherited.types.label-large
+color: $colors.text-
 style: semi-bold
 opacity: 0.7
 
@@ -193,6 +199,7 @@ max-width.fixed.px: 160
 
 -- ftd.text: $profile-card.name
 role: $inherited.types.label-large
+color: $colors.text-
 style: semi-bold
 opacity: 0.7
 margin-bottom.px: 8
@@ -201,6 +208,7 @@ margin-bottom.px: 8
 -- ftd.text: 
 role: $inherited.types.copy-regular
 style: regular
+color: $colors.text-
 
 $profile-card.details
 

@@ -1,4 +1,5 @@
 -- import: sarvom.github.io/beta-crafts/fonts as fonts
+-- import: sarvom.github.io/beta-crafts/colors as colors 
 
 
 -- component page:
@@ -7,7 +8,7 @@ children c:
 -- ftd.column:
 width: fill-container
 types: $fonts.types
-background.solid: #f6f6ef
+background.solid: $colors.base-
 
 -- ftd.column:
 width: fill-container
@@ -104,22 +105,25 @@ align-self: center
 role: $inherited.types.heading-medium
 style: light
 text-align: center
+color: $colors.text-
 
 -- ftd.text: $hero-mobile.color-text
 role: $inherited.types.heading-medium
 style: regular
-color: #de2d18
+color: $colors.accent-primary-
 text-align: center
 
 -- ftd.text: $hero-mobile.text-2
 role: $inherited.types.heading-medium
 style: light
 text-align: center
+color: $colors.text-
 
 -- ftd.text: $hero-mobile.text-3
 role: $inherited.types.heading-medium
 style: semi-bold
 text-align: center
+color: $colors.text-
 
 -- end: ftd.column
 
@@ -180,21 +184,24 @@ wrap: true
 -- ftd.text: $hero-desktop.text-1
 role: $inherited.types.heading-medium
 style: light
+color: $colors.text-
 
 -- ftd.text: $hero-desktop.color-text
 role: $inherited.types.heading-medium
 style: regular
-color: #de2d18
+color: $colors.accent-primary-
 
 -- ftd.text: $hero-desktop.text-2
 role: $inherited.types.heading-medium
 style: hairline
+color: $colors.text-
 
 -- end: ftd.row
 
 -- ftd.text: $hero-desktop.text-3
 role: $inherited.types.heading-medium
 style: semi-bold
+color: $colors.text-
 
 -- end: ftd.column
 
@@ -234,6 +241,7 @@ padding.px: 24
 -- ftd.text:
 role: $inherited.types.label-small
 text-align if { ftd.device == "mobile"}: center
+color: $colors.text-
 
 $body-content.body
 
@@ -254,12 +262,12 @@ caption text:
 
 -- ftd.column:
 border-bottom-width.px: 4
-border-color: #de2d18
+border-color: $colors.accent-primary-
 
 -- ftd.text: $text-with-underline.text
 role: $inherited.types.heading-small
 text-align: center
-
+color: $colors.text-
 
 -- end: ftd.column
 
@@ -290,6 +298,7 @@ if: { heading.pre-text != NULL }
 role: $inherited.types.heading-small
 style: regular
 text-align: center
+color: $colors.text-
 
 -- text-with-underline: $heading.highlight-text
 if: { heading.highlight-text != NULL }
@@ -299,7 +308,7 @@ if: { heading.post-text != NULL }
 role: $inherited.types.heading-small
 style: regular
 text-align: center
-
+color: $colors.text-
 
 -- end: ftd.row
 
@@ -530,6 +539,7 @@ align-self: center
 -- ftd.text: $footer-mobile.cta-text
 role: $inherited.types.label-large
 align-self: center
+color: $colors.text-
 
 -- ftd.row:
 spacing.fixed.px: 12
@@ -540,26 +550,32 @@ wrap: true
 -- ftd.text: $footer-mobile.text-1
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-mobile.text-2
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-mobile.text-3
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-mobile.text-4
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-mobile.text-5
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-mobile.text-6
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- end: ftd.row
 
@@ -608,6 +624,7 @@ align-self: center
 -- ftd.text: $footer-desktop.cta-text
 role: $inherited.types.label-large
 align-self: center
+color: $colors.text-
 
 -- ftd.row:
 spacing.fixed.px: 12
@@ -617,26 +634,32 @@ align-self: center
 -- ftd.text: $footer-desktop.text-1
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-desktop.text-2
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-desktop.text-3
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-desktop.text-4
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-desktop.text-5
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- ftd.text: $footer-desktop.text-6
 role: $inherited.types.label-small
 align-self: center
+color: $colors.text-
 
 -- end: ftd.row
 
